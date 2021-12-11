@@ -30,5 +30,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           env
-          cat workflow/event.json
+          cat $GITHUB_EVENT_PATH
           echo test, and deploy your project.
