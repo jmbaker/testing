@@ -29,5 +29,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo $github_event_path,
+          env
+          cat workflow/event.json
           echo test, and deploy your project.
