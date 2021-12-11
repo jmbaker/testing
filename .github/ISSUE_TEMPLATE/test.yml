@@ -31,6 +31,7 @@ body:
       label: Example template
       description: Enter example template
       placeholder: Template
+      value: something
     validations:
       required: false
   - type: dropdown
