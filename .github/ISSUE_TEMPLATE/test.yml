@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
+title: "[Same Stack Issue]: "
 labels: ["bug", "triage"]
 assignees:
   - octocat
@@ -17,15 +17,22 @@ body:
       placeholder: ex. AWS::KMS::Key
     validations:
       required: true
-  - type: textarea
-    id: what-happened
+  - type: input
+    id: referenced_resource_type
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Referenced Resource Type
+      description: Enter Referenced Resource Type
+      placeholder: ex. AWS::KMS::Alias
     validations:
       required: true
+  - type: textarea
+    id: example template
+    attributes:
+      label: Example template
+      description: Enter example template
+      placeholder: Template
+    validations:
+      required: false
   - type: dropdown
     id: version
     attributes:
